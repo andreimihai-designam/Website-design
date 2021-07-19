@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pictura textila disponibila in printuri sau pe comanda. Materialele textile sunt concepute din bumbac 100% organic. Pictura Textila - 100% Bumbac Eco"/>
+    <meta name="kewwords" content="pictura textila, pictura, organic, bumbac, magazin, tricouri">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Pictura Textila - 100% Bumbac Eco | Laleli Atelier Boutique</title>
+</head>
+<body>
+    <div class="bg-top-img">
+        <div id="bg-img-left"><img src="../images/leaf1.png" alt=""></div>
+        <!-- <div id="bg-img-right"><img src="./images/leaf1.png" alt=""></div> -->
+    </div>
+    <header>
+        <a href="../index.html">
+            <img src="../images/LogoLalelipictat.svg" alt="Logo" id="logo">
+        </a>
+        <nav id="main-menu">
+            <i class="menu-icon fas fa-bars"></i>
+            <i class="menu-icon fas fa-times"></i>
+            <ul id="menu">
+                <a href="about.html"><li>About</li></a>
+                <a href="shop.html"><li>Shop</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+                <a href="signin.html"><li>Signin</li></a>
+                <a href="signup.html"><li>Signup</li></a>
+            </ul>
+        </nav>
+    </header>
+    <!------------------------------------------- || ------------------------------------------->
+    <!-------------------------------------- MAIN SECTION -------------------------------------->
+    <main>
+        <!----------------------------------- SLIDER SECTION ----------------------------------->
+        <section class="owl-carousel owl-theme" id="carousel">
+            <div class="item">
+                <img src="../images/img-sld3-edit.jpg" alt="imagine 1 slider">
+                <h4></h4>
+                <p></p>
+            </div>
+            <div class="item">
+                <img src="../images/img-sld2.jpg" alt="imagine 2 slider">
+                <h4></h4>
+                <p></p>
+            </div>
+            <div class="item">
+                <img src="../images/img-sld1.jpg" alt="imagine 3 slider">
+                <h4></h4>
+                <p></p>
+            </div>
+        </section>
+        <!----------------------------------------- || ----------------------------------------->
+        <!----------------------------------- INTRO SECTION ------------------------------------>
+        <article id="section-article" class="sections">
+            <p id="intro">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum leo vitae imperdiet facilisis. Duis iaculis justo vitae feugiat finibus. Sed non tempor mi. Nunc varius, ex sed ullamcorper placerat, elit sem maximus mauris, quis tempus nunc turpis quis enim. Phasellus ultricies arcu ut tellus commodo molestie.
+            </p>
+        </article>
+
+        <section id="section-contact">
+            <h2 class="section-title">Feel free to contact me</h2>
+            <form action="#">
+                <input type="text" name="name" id="name" placeholder="Your Name...">
+                <input type="email" name="email" id="email" placeholder="Enter a valid email address...">
+                <textarea name="messaje" id="message" cols="30" rows="10" placeholder="Message..."></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    
+        <footer id="section-footer">
+            <div id="foot-left">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div id="foot-middle">
+                <p>Copyright &copy; Ana Neacsa | 2021</p>
+            </div>
+            <div id="foot-right">
+                <ul>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="terms.html"><li>Privacy</li></a>
+                    <a href="terms.html"><li>Terms</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
+        </footer>
+        <!------------------------------------------- || ------------------------------------------->
+        <!--------------------------------------- JAVASCRIPT --------------------------------------->
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:false,
+                navSpeed: 500,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3200,
+                autoplayHoverPause: true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
+                    }
+                }
+            })
+        </script>
+
+</body>
