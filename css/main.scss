@@ -5,6 +5,7 @@ $title-color: #6a605c;
 $btn-color: #a8ba9a;
 $btn-hover-color: #f7f1f1;
 $body-color: #e6e6c4;
+$star-rev: #ffd83d;
 
 // FontSize
 $main-text: 16px;
@@ -721,7 +722,7 @@ a {
     background: none;
     display: flex;
     justify-content: center;
-    padding: 40px 10px;
+    padding: 40px 120px;
     .prod-img {
       img {
         width: 100%;
@@ -797,6 +798,7 @@ a {
     margin-bottom: 40px;
     background: none;
     display: flex;
+    padding: 0 120px;
     justify-content: flex-start;
     .prod-img {
       transition: all 0.4s ease;
@@ -873,6 +875,37 @@ a {
         height: 30%;
         clip-path: polygon(50% 100%, 0 0, 100% 0);
       }
+    }
+  }
+  .section-rev {
+    padding: 40px 120px;
+
+    h4 {
+      font-size: 20px;
+      font-weight: 800;
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 40px;
+        width: 9%;
+        height: 1.8px;
+        background: $title-color;
+      }
+    }
+    .stars {
+      display: flex;
+      width: 1.5%;
+
+      .star-rev {
+        color: $star-rev;
+        padding: 40px 0 20px 0;
+      }
+    }
+    p {
+      text-align: justify;
     }
   }
 }
