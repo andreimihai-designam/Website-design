@@ -5,14 +5,22 @@ $title-color: #6a605c;
 $btn-color: #a8ba9a;
 $btn-hover-color: #f7f1f1;
 $body-color: #e6e6c4;
-$star-rev: #ffd83d;
+$star-rev: #f7d377;
 
 // FontSize
-$main-text: 16px;
+$main-text: 13px;
+$prod-title: 16px;
+$prod-price: 18px;
 $title: 25px;
 $subtitle: 18px;
 
 /* ---------------------------------- RESET ---------------------------------- */
+body {
+  max-width: 1350px;
+  width: 100%;
+  margin: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,6 +37,14 @@ li {
 a {
   text-decoration: none;
   color: #3d3d3d;
+}
+
+input {
+  outline: none;
+}
+
+select {
+  outline: none;
 }
 
 .section-title {
@@ -60,7 +76,7 @@ a {
     width: 100%;
     margin: auto;
     position: relative;
-    background: rgba($body-color, 0.2);
+    background: rgba(white, 0.2);
   }
 
   #bg-img-left {
@@ -118,9 +134,9 @@ a {
       display: flex;
       position: absolute;
       z-index: 3;
-      top: -220px;
-      left: calc(100% / 3 + 10px);
-      width: 30%;
+      top: -190px;
+      left: calc(100% / 3 + 6%);
+      width: 20%;
     }
 
     img {
@@ -149,7 +165,7 @@ a {
         li {
           padding: 0 30px;
           color: $default-font-color;
-          font-size: 12px;
+          font-size: 10px;
           letter-spacing: 1px;
           transition: all 0.4s ease;
 
@@ -179,10 +195,11 @@ a {
   }
 
   // collections
-  #carousel {
+  .carousel {
     width: 100%;
     height: 500px;
     margin-top: 330px;
+
     .item {
       img {
         width: 1500px;
@@ -190,20 +207,6 @@ a {
         object-fit: cover;
         border-radius: 0;
       }
-    }
-  }
-
-  #section-article {
-    background: none;
-    margin-top: 40px;
-    #intro {
-      border: none;
-      font-size: 16px;
-      color: $default-font-color;
-      line-height: 30px;
-      padding: 20px 120px;
-      margin-top: 10px;
-      text-align: center;
     }
   }
 
@@ -274,11 +277,11 @@ a {
         text-align: center;
         padding: 30px 0;
         h4 {
-          font-size: 20px;
+          font-size: $prod-title;
           color: $default-font-color;
         }
         p {
-          font-size: 18px;
+          font-size: $prod-price;
           font-weight: bold;
           color: $default-font-color;
         }
@@ -297,6 +300,7 @@ a {
     width: 10%;
     margin-left: 45%;
     transition: all 0.3s ease;
+    font-size: $main-text;
 
     &:hover {
       background: $btn-hover-color;
@@ -329,7 +333,7 @@ a {
       margin: 80px 0;
       text-align: center;
       #feat-title {
-        font-size: 25px;
+        font-size: $title;
         margin: auto;
         width: 50%;
         line-height: 40px;
@@ -338,7 +342,7 @@ a {
       }
       p {
         padding: 40px 0;
-        font-size: 20px;
+        font-size: $prod-price;
         font-weight: bold;
         position: relative;
         color: $default-font-color;
@@ -368,7 +372,7 @@ a {
 
       #feat-detail {
         font-weight: 100;
-        font-size: 15px;
+        font-size: $main-text;
         line-height: 30px;
         width: 80%;
         margin: auto;
@@ -381,7 +385,7 @@ a {
         background-color: $btn-color;
         margin: 20px 0;
         color: $btn-hover-color;
-        font-size: 15px;
+        font-size: $main-text;
         transition: all 0.3s ease;
 
         &:hover {
@@ -400,12 +404,12 @@ a {
 
     h3 {
       padding: 0;
-      font-size: 25px;
+      font-size: $title;
       color: $default-font-color;
       text-align: center;
     }
     p {
-      font-size: 16px;
+      font-size: $main-text;
       padding-bottom: 10px;
       color: $default-font-color;
       text-align: center;
@@ -417,12 +421,14 @@ a {
 
       input {
         border: none;
-        padding: 15px;
+        outline: none;
+        padding: 13px;
         width: calc(100% / 2);
 
         &::placeholder {
           color: rgba($default-font-color, 0.5);
           font-style: italic;
+          font-size: $main-text;
         }
       }
 
@@ -432,7 +438,7 @@ a {
         margin: auto;
         background: $btn-color;
         padding: 18px;
-        font-size: 18px;
+        font-size: $main-text;
         margin-top: 10px;
         margin-bottom: 40px;
         color: $btn-hover-color;
@@ -450,6 +456,10 @@ a {
   /* footer */
   #section-footer {
     position: relative;
+    width: 100%;
+    height: 310px;
+    // background: $btn-hover-color;
+
     // padding: 0 120px;
 
     #foot-left {
@@ -461,7 +471,7 @@ a {
 
       i {
         color: $btn-color;
-        font-size: 30px;
+        font-size: 20px;
         transition: all 0.4s ease;
 
         &:hover {
@@ -503,14 +513,14 @@ a {
 
       ul {
         display: block;
-        text-align: center;
+        text-align: left;
         position: absolute;
         right: 0;
         padding: 80px 120px;
 
         li {
           padding: 10px;
-          font-size: 12px;
+          font-size: 10px;
 
           &::after {
             content: "";
@@ -547,6 +557,34 @@ a {
   }
 
   // -------------------------------------------- ABOUT PAGE --------------------------------------------
+  #carousel-about {
+    display: none;
+  }
+
+  .section-article {
+    background: none;
+    margin-top: 40px;
+    #intro {
+      border: none;
+      width: 80%;
+      font-size: ($main-text + 2px);
+      color: $default-font-color;
+      line-height: 30px;
+      padding: 20px 120px;
+      margin-top: 10px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  #section-article-about {
+    display: none;
+  }
+
+  #about-me {
+    margin-top: 330px;
+  }
+
   #section-about {
     display: flex;
     justify-content: center;
@@ -562,6 +600,7 @@ a {
     #section-right {
       #about-title {
         font-family: "Pacifico", sans-serif;
+        color: $default-font-color;
         letter-spacing: 2px;
         font-size: $title;
         text-align: center;
@@ -584,6 +623,14 @@ a {
   }
 
   // -------------------------------------------- TERMS PAGE --------------------------------------------
+  #carousel-terms {
+    display: none;
+  }
+
+  #section-article-terms {
+    margin-top: 330px;
+  }
+
   #section-terms {
     width: 80%;
     margin: auto;
@@ -596,14 +643,24 @@ a {
   }
 
   // -------------------------------------------- CONTACT PAGE --------------------------------------------
+  #carousel-contact {
+    display: none;
+  }
+
+  #section-article-contact {
+    display: none;
+  }
+
   #section-contact {
     width: 60%;
     margin: 40px auto;
+    margin-top: 330px;
     padding: 0 120px;
     text-align: center;
     form {
       input {
         // border: 1px solid black;
+        outline: none;
         width: 100%;
         border: none;
         padding: 10px;
@@ -629,6 +686,7 @@ a {
         background: rgba($btn-hover-color, 0.7);
         border: none;
         width: 100%;
+        outline: none;
 
         &::placeholder {
           font-size: $main-text;
@@ -640,9 +698,14 @@ a {
     }
   }
   // -------------------------------------------- SHOP PAGE --------------------------------------------
+  #carousel-shop {
+    display: none;
+  }
+
   #section-shop {
     width: 100%;
     padding: 0 120px;
+    margin-top: 330px;
     #filter {
       display: flex;
       justify-content: center;
@@ -685,7 +748,7 @@ a {
       // background: #000;
       .item {
         text-align: center;
-        font-size: 20px;
+        font-size: $prod-title;
         // background: #000;
         margin-top: 40px;
         transition: all 0.4s ease;
@@ -713,6 +776,11 @@ a {
       }
     }
   }
+
+  #sixed-item {
+    margin-top: -48px;
+  }
+
   #section-title-products {
     margin-top: 40px !important;
   }
@@ -819,7 +887,7 @@ a {
   }
   #section-reviews {
     margin: 40px 0;
-    padding: 80px 0 80px 0;
+    padding: 40px 0 0px 0;
     background: rgba($body-color, 0.3);
     #buttons {
       display: flex;
@@ -847,6 +915,7 @@ a {
       position: relative;
       outline: none;
       select {
+        outline: none;
         appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -878,10 +947,14 @@ a {
     }
   }
   .section-rev {
-    padding: 40px 120px;
+    padding: 20px 120px;
+
+    &:nth-child(odd) {
+      background: $body-color;
+    }
     //ffdsfds
     h4 {
-      font-size: 20px;
+      font-size: $prod-title;
       font-weight: 800;
       position: relative;
 
@@ -889,7 +962,7 @@ a {
         content: "";
         display: block;
         position: absolute;
-        top: 40px;
+        top: 30px;
         width: 9%;
         height: 1.8px;
         background: $title-color;
@@ -901,11 +974,12 @@ a {
 
       .star-rev {
         color: $star-rev;
-        padding: 40px 0 20px 0;
+        padding: 20px 0 20px 0;
       }
     }
     p {
       text-align: justify;
+      font-size: $main-text;
     }
   }
 }
