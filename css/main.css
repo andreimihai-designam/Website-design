@@ -725,12 +725,17 @@ select {
     margin-top: 40px !important;
   }
 
+  #carousel-hand-bag {
+    display: none;
+  }
+
   #section-prod {
     margin: 40px 0 0 0;
     background: none;
     display: flex;
     justify-content: center;
     padding: 40px 120px;
+    margin-top: 330px;
   }
   #section-prod .prod-img img {
     width: 100%;
@@ -826,6 +831,10 @@ select {
   #section-prod-img .prod-img:hover {
     transform: scale(1.08);
     cursor: pointer;
+  }
+
+  #carousel-review {
+    display: none;
   }
 
   #section-reviews {

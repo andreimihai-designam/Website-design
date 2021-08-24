@@ -785,12 +785,17 @@ select {
     margin-top: 40px !important;
   }
   // -------------------------------------------- PRODUCT PAGE --------------------------------------------
+  #carousel-hand-bag {
+    display: none;
+  }
+
   #section-prod {
     margin: 40px 0 0 0;
     background: none;
     display: flex;
     justify-content: center;
     padding: 40px 120px;
+    margin-top: 330px;
     .prod-img {
       img {
         width: 100%;
@@ -885,6 +890,10 @@ select {
       }
     }
   }
+  #carousel-review {
+    display: none;
+  }
+
   #section-reviews {
     margin: 40px 0;
     padding: 40px 0 0px 0;
